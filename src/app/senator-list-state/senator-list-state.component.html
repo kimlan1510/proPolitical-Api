@@ -1,0 +1,8 @@
+<div class="senator" *ngFor="let senator of childSenatorList" (click)="goToDetailPage(senator)">
+  <h4>Name: {{senator.name}}</h4>
+  <h5>Gender: {{senator.gender}}</h5>
+  <h5>Role: {{senator.role}}</h5>
+  <h5>Party: {{senator.party}}</h5>
+  <h5>ID: {{senator.id}}</h5>
+  <button type="button" name="button" (click)="saveSenator(senator.name, senator.gender, senator.role, senator.party, senator.id)">Save</button>
+</div>

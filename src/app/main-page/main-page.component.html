@@ -1,0 +1,14 @@
+<h1>Find Senators by States</h1>
+<form>
+  <label for="state">Two-letter state abbreviation</label>
+  <input name="state" #State>
+  <button type="button" name="button" (click)="getSenatorByState(State.value)">Search</button>
+</form>
+
+<div *ngIf="isSenator">
+  <app-senator-list-state [childSenatorList]="senatorListByState"></app-senator-list-state>
+</div>
+
+<div *ngIf="!isSenator">
+
+</div>

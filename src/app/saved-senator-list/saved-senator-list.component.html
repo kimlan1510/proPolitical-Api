@@ -1,0 +1,10 @@
+<h1>Your Saved Senators</h1>
+<div *ngFor="let senator of senators | async">
+  <h4>Name: {{senator.name}}</h4>
+  <h5>Gender: {{senator.gender}}</h5>
+  <h5>Role: {{senator.role}}</h5>
+  <h5>Party: {{senator.party}}</h5>
+  <h5>ID: {{senator.id}}</h5>
+  <button (click)="deleteSenator(senator)">Delete Senator</button>
+</div>
+<a routerLink=''>Back to Search Page</a>

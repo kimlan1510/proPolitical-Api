@@ -1,0 +1,9 @@
+
+<h1>Details about your respresentative!</h1>
+<p>Full name: {{senatorToDisplay.first_name}} {{senatorToDisplay.last_name}}</p>
+<p>State: {{senatorToDisplay.roles[0].state}}</p>
+<p>DOB: {{senatorToDisplay.date_of_birth}}</p>
+<p>Current party: {{senatorToDisplay.current_party}}</p>
+<p>Role: {{senatorToDisplay.roles[0].title}}</p>
+<h2>Bills</h2>
+<app-bills-by-senator [childSenatorId]="senatorId"></app-bills-by-senator>

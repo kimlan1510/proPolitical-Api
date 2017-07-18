@@ -1,0 +1,7 @@
+<div *ngFor="let bill of billsList" class="bills">
+  <p>Title: {{bill.title}}</p>
+  <p>Introduced Date: {{bill.introduced_date}}</p>
+  <p>Active: {{bill.active}}</p>
+  <p>Committees: {{bill.committees}}</p>
+  <p>URL:<a href="{{bill.govtrack_url}}">click here</a></p>
+</div>
